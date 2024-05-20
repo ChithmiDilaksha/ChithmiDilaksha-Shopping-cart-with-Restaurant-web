@@ -1,0 +1,970 @@
+ /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ECF0F1 ;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+    background-image: url('photos/headrphoto1.jpg'); /* Add background image */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: #000000;
+    padding: 30px 0px; /* Restaurant name */
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index: 1000;
+}
+
+    header h1 
+    {
+      float: left;
+      font-size: 35px;
+    }
+
+    nav a.active {
+      font-weight: bold;
+      color: #ff0000; 
+  }
+
+    nav ul {
+      float: right;
+      font-size: 15px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-left: 25px;
+
+    }
+
+    nav ul li a {
+      color: #000000;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url('photos/homebackground.jpg'); /* Changed background image */
+      background-size: cover;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 300px 0;
+
+    }
+
+    .hero h2 {
+      font-size: 5em;
+      text-align: right;
+      color: #ffffff;
+    }
+
+    
+    .specials-section {
+    margin-bottom: 30px;
+    color: #000; /* Change text color to black */
+}
+
+.specials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.special-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.special-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+/*Zoom Image*/
+.special-item:hover {
+  transform: scale(1.1);
+} 
+
+h2 {
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Chef and Popular Dish styles */
+.chef-section,
+.popular-dishes-section {
+    color: #000; /* Change text color to black */
+}
+
+.chef-grid,
+.popular-dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.chef-item,
+.popular-dish-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.chef-item:hover {
+  transform: scale(1.1);
+}
+.chef-item img,
+.popular-dish-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/*-------------------------Footer Styles Start --------------------------------------------*/
+
+.footer {
+    background-image: url('photos/footer1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    position: relative; /* Add position relative to make the z-index work */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer::before {
+    content: ""; /* Create a pseudo-element */
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity here (0.5 means 50% opaque black) */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer .container {
+    position: relative; /* Add position relative */
+    z-index: 1; /* Add z-index to make sure the content is on top of the pseudo-element */
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.col-md-6{margin-bottom: 30px;}
+.h1about {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    float: left;
+    margin: 40 auto;
+}
+
+.footer-heading {
+    float: center;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.quick-links li {
+    list-style-type: none;
+    margin-bottom: 10px;
+     
+}
+.quick-links li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.quick-links li a:hover {
+    color: #ccc;
+}
+.footer-bottom 
+{
+    background-color: #222;
+    text-align: center;
+    padding: 20px 10px; /* Adjust padding as needed */
+    position: relative;
+    z-index: 2; /* Ensure that the footer-bottom content is above the pseudo-element */
+    
+}
+/*-------------------------Footer Styles Done --------------------------------------------*/
+
+
+
+/*--------------Register form------------------------------------------------*/
+
+.containerRegister {
+  max-width: 400px; /* Increase the width of the form container */
+  margin: 150px auto; /* Adjust margin-top to move the form down */
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: black;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+
+/* CSS for image background */
+#image-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Adjust the height as needed */
+  z-index: -1; /* Ensure the image is behind other content */
+}
+
+/* CSS for the image element */
+#background-image {
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+  object-fit: cover; /* Scale the image to cover the entire container */
+}
+
+/*---------------------------------- Register Done ---------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------- Book Us section styles -------------------------------*/
+    .container-bookus {
+      background-color: #0000; /* Light pink color */
+      padding: 50px 0;
+      text-align: center;
+      margin: 100px;
+
+    }
+
+    .border-box {
+      max-width: 600px; /* Set maximum width for the form */
+      margin: 0 auto; /* Center the form */
+      padding: 20px; /* Add padding inside the form */
+      border: 2px solid #B87333; /* Rectangle border */
+      border-radius: 10px; /* Adjust border radius for rounded corners */
+      background-color: #fff; /* Form background color */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+
+    }
+
+    .bookus {
+      font-size: 18px;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .display {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .form-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .form-label {
+      flex: 1;
+      font-weight: bold;
+      margin-bottom: 5px; /* Add some bottom margin to separate labels */
+    }
+
+   .form-select,
+    .contactNo,
+    .Date,
+    .submitbtn {
+      flex: 2;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .submitbtn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .submitbtn:hover {
+      background-color: #0056b3;
+    }
+/*------------------------------------- Book us start ------------------------------------------*/
+
+
+
+
+/*------------------------------------- contact us start ------------------------------------------*/
+.wrapper {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 100px;
+}
+
+.contact-wrap h3 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #ffae42;
+}
+/*------------------------------------- contact us done ------------------------------------------*/
+
+
+/*--------------------------------------- Menu page specific styles --------------------------------*/
+.menu-section {
+  margin-bottom: 30px;
+  color: #000; /* Change text color to black */
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 20px;
+}
+
+.menu-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.menu-section {
+  margin-top: 100px; /* Add some space between the header and the menu section */
+  margin-bottom: 30px;
+  color: #000; /* Change text color to black */
+}
+.menu-section h2
+{
+  font-size: 45px;
+  font-family: ariyal;
+  margin-top: 150px;
+}
+.image-container:hover {
+  transform: scale(1.1);
+}
+/*------------------------------------- Menu page done ------------------------------------------*/
+
+
+/*------------------------------------- about page specific styles ----------------------------------------*/
+
+.about-section {
+    padding: 150px 0;
+  background-image: url('photos/aboutbackground.jpg'); /* Add background image */
+  background-size: cover;
+  font-family: Arial, sans-serif; /* Set default font family */
+
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-section h1 {
+  font-size: 36px; /* Increase font size for h1 */
+  font-weight: bold;
+  color: #fff; /* White text color */
+  text-align: center;
+  margin-bottom: 30px; /* Add margin below h1 */
+}
+
+.about-section h2 {
+  font-size: 24px; /* Increase font size for h2 */
+  font-weight: bold;
+  color: #333; /* Dark text color */
+}
+
+.MostPopulers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.MostPopulerstexts {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+}
+
+.image-containers {
+  display: grid;
+  margin-top: 5em;
+  margin-left: 100px;
+  float: left;
+}
+
+.about-images {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-images:hover {
+  transform: scale(1.1);
+}
+
+.text-containers {
+  max-width: 50%;
+  margin-top: 40px;
+}
+
+.text-containers h2 {
+  font-size: 24px;
+  color: black;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 300px;
+}
+
+.text-containers p {
+  font-size: 18px; /* Adjust font size */
+  line-height: 1.5;
+  margin-left: 120px;
+  text-align: left;
+
+}
+/*------------------------------------- about page specific styles done ----------------------------------------*/
+
+
+
+
+
+/*------------------------------------------ our galery start----------------------------------------*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Increase the gap between images */
+  justify-content: center; /* Align images to the center */
+  border: 2px ;
+  padding: 10px;
+}
+
+.single_gallery {
+  position: relative;
+  flex: 0 0 calc(33.33% - 20px); /* Set initial width of images */
+  overflow: hidden; /* Hide overflow to prevent white corner from showing */
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid #fff; /* Add white border around images */
+}
+
+.gallery img:hover {
+  transform: scale(1.2); /* Increase the scale on hover */
+}
+
+.popup-image {
+  position: absolute;
+  top: -30px; /* Position the name above the image */
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for text */
+  color: #fff; /* White text */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.single_gallery:hover .popup-image {
+  display: block;
+}
+/*------------------------------------------ Our galery done ----------------------------------------*/
+
+
+
+
+/* ----------------- Login Page password Icon And error massage ---------------*/
+.password-container {
+      position: relative;
+    }
+    #password {
+      padding-right: 35px; /* Adjust the padding to accommodate the icon */
+    }
+    #togglePassword {
+      position: absolute;
+      right: 10px; /* Adjust the distance from the right */
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+ .error-message {
+      color: red;
+      text-align: center;
+      margin-top: 20px; /* Adjust the margin as needed */
+    }
+/*------------------------------------Login Page Done--------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------ shopping.php page start----------------------------------------*/
+.cart-btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#cart {
+  position: relative;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 1em 4em 0 0;
+  float: right;
+}
+
+.cart-quantity {
+  color: white;
+  background-color: red;
+  padding: .2em .3em;
+  position: absolute;
+  margin: .12em 0em 0 0;
+  right: 110px;
+  border: solid 2px red;
+  border-radius: 15px;
+  font-weight: bolder;
+
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-top: 1em
+}
+
+.card {
+  margin: 1em;
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.product-image {
+  margin-bottom: 1em;
+}
+
+.add-to-cart {
+  background-color: red; /* Change background color from black to red */
+  color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  padding: .5em 1em;
+  transition: .5s ease;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  width: 130px;
+}
+
+.add-to-cart:hover {
+  background-color: black; /* Change background color from red to black on hover */
+}
+.add-to-cart-paragraph
+{
+  margin-bottom: 30px;
+}
+
+.productName
+{
+  margin-bottom: 20px;
+}
+.product-price {
+  padding-top: 1em;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cart-modal-overlay {
+  position: fixed;
+  margin-top: 100px;
+  margin-bottom: 300px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 2;
+  transform: translateX(-200%);
+  transition: .5s ease-out;
+  
+}
+
+.cart-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%; /* Adjust the desired height */
+  width: 80%; /* Adjust the desired width */
+  max-height: calc(100vh - 100px); /* Limit modal height to viewport height minus some space for other elements */
+  max-width: 600px; /* Limit modal width */
+  background-color: rgb(50, 50, 50);
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px; /* Add padding for content */
+  color: #fff; /* Text color */
+}
+
+#close-btn {
+  font-size: 1.5rem;
+  float: right;
+  margin: .5em 2em 0 0;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-is-empty {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  display: none;
+  
+}
+
+.total {
+  text-align: center;
+  margin: 2em 0 2em 0;
+/*   display: none; */
+}
+
+.cart-total {
+  color: white;
+}
+
+.total-price {
+  color: white;
+  font-size: 2rem;
+  display: block;
+}
+
+.purchase-btn {
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: green;
+  color: white;
+  padding: 1em 2em;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 2em 0 1em 0;
+}
+
+.product-rows {
+  margin-top: 3em;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+}
+
+.cart-image {
+  width: 10rem;
+  margin: 1em;
+}
+
+.cart-price {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.product-quantity {
+  width: 4rem;
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+.remove-btn {
+  padding: 1em 2em;
+  background-color: red;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 3rem;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.remove-btn:active {
+  transform: translateY(5px);
+}
+
+@media (max-width: 1000px){
+  .cart-modal {
+    width: 100vw;
+  } 
+  
+  .product-row {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  .remove-btn {
+    margin: 0
+  }
+  
+  .product-quantity {
+    margin: .5em 0 .5em 0
+  }
+}
+
+.cart-icon-container {
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.items-containeradd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+}
+
+.items-containeradd .card {
+  width: 20%; /* Each card takes up 20% of the container width */
+  margin: 10px; /* Adjust as needed */
+}
+
+.items-containeradd .card img {
+  max-width: 100%;
+  display: block;
+  margin-top: 50px;
+}
+
+
+
+/*------------------------------------------ shopping.php 9 buttons with page ----------------------------------------*/
+.food-button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Gap between buttons */
+    margin-left: 200px;
+}
+
+.food-button {
+    padding: 10px 20px; /* Reduced padding */
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 150px; /* Set a fixed width for consistent sizes */
+    margin-bottom: 25px;
+}
+
+/*Buttos section*/
+.addtypeFoods {
+  text-align: center;
+  justify-content: center;
+  font-family: Cursive;
+  font-size: 20px;
+  color: #6a5acd; /* Low purple color */
+  display: inline-block;
+  padding: 10px 20px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border: 3px solid black; /* Black margin */
+  margin-bottom: 50px;
+}
+.shopaddtocart{
+  margin-top: 120px;
+}
+.ourfoodssectiontype
+{
+  font-family: Cursive;
+  font-size: 14px;
+  color: royalblue; /* Low purple color */
+  display: inline-block;
+  padding: 10px 20px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border: 3px solid black; /* Black margin */
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.shopbackground
+{
+  background-color: #e6e8fa;
+}
+.card-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Adjust width as needed */
+  height: 100%; /* Adjust height as needed */
+}
+
+
+.customer-details label
+{
+   font-size: 20px;
+   color: white;
+}
+
+.button {
+  padding: 10px;
+  border: 0;
+  font-weight: 700;
+  color: #fff;
+  background: #b90909;
+  cursor: pointer;
+}
+
+.shoppingcart
+{
+  margin-top: 100px;
+}
+/*------------------------------------------ shopping.php page done ----------------------------------------*/
+
+
+

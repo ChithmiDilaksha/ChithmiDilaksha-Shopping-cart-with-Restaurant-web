@@ -1,0 +1,24 @@
+CREATE DATABASE IF NOT EXISTS Restaurant;
+
+USE Restaurant;
+
+CREATE TABLE IF NOT EXISTS customer (
+    full_name VARCHAR(255) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE PRIMARY KEY,
+    phone_number VARCHAR(20) NOT NULL
+);
+
+
+CREATE TABLE orders (
+   
+    username VARCHAR(255),
+    email VARCHAR(255),
+    address VARCHAR(255),
+    product_name VARCHAR(255),
+    quantity INT,
+    total_price DECIMAL(10, 2),
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

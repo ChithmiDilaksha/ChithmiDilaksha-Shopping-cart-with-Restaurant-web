@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a table </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <h1>REMEKVIN RESTAURANT</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="book.html" class="active">Book Table</a></li>
+                <li><a href="Register.php">Registation</a></li>
+                <li><a href="Login.php">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+ <!-- Book Us Start -->
+  <div class="container-bookus">
+    <div class="container">
+      <div class="border-box">
+        <div class="text-center">
+          <small class="bookus">Book Us</small>
+          <h2 class="display">Where you want Our Services</h2>
+        </div>
+
+        <!-- Your form here -->
+        <div class="row g-4 form">
+    <div class="col-lg-4 col-md-6 form-row">
+        <label for="Date" class="form-label">Date:</label>
+        <input type="date" id="Date" class="form-select" required>
+    </div>
+    <div class="col-lg-4 col-md-6 form-row">
+        <label for="Time" class="form-label">Time:</label>
+        <input type="time" id="Time" class="form-select" required>
+    </div>
+</div>
+
+          <div class="col-lg form-row">
+            <label for="Event" class="form-label">Event</label>
+            <select id="Event" class="form-select" aria-label="Default select example">
+              <option selected>Select Event</option>
+              <option value="1">Family</option>
+              <option value="2">Couple</option>
+              <option value="3">Other</option>
+            </select>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 form-row">
+            <label for="Vegetarian" class="form-label">Vegetarian</label>
+            <select id="Vegetarian" class="form-select" aria-label="Default select example">
+              <option selected>Vegetarian Type</option>
+              <option value="1">Vegetarian</option>
+              <option value="2">Non Vegetarian</option>
+              <option value="3">Both</option>
+            </select>
+          </div>
+          <div class="col-lg-4 col-md-6 form-row">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" class="form-select name" placeholder="Enter Your Full Name">
+          </div>
+          <div class="col-lg-4 col-md-6 form-row">
+            <label for="People" class="form-label">No Of People.</label>
+            <input type="text" id="contactNo" class="form-select People" placeholder="How many People">
+          </div>
+          <div class="col-lg-4 col-md-6 form-row">
+            <label for="contactNo" class="form-label">Contact No.</label>
+            <input type="text" id="contactNo" class="form-select contactNo" placeholder="Your Contact No.">
+          </div>
+          <div class="col-lg-4 col-md-6 form-row">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-select email" placeholder="Enter Your Email">
+          </div>
+          
+          <div class="col-12 text-center">
+            <button type="submit" class="submitbtn">Submit Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Book Us End -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="h1about">About Us</h1>
+        </div>
+        <div class="col-md-3">
+          <h2 class="footer-heading">Web Pages</h2>
+          <ul class="quick-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book_table.html">Book a Table</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 REMEKVIN. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
